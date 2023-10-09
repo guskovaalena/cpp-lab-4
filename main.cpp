@@ -15,9 +15,9 @@ int maximum(int *arr, int n){
 }
 
 // фнкция поиска суммы элементов в массиве
-int arrsum (int *arr, int n){
+long int arrsum (int *arr, int n){
 
-    int sum = 0;
+    long int sum = 0;
 
     for (int i = 0; i < n; i++)
         sum += arr[i];
@@ -52,8 +52,8 @@ int main () {
     int k1 = 0;
     int k2 = 0;
 
-    int s1 = 0;
-    int s2 = 0;
+    long int s1 = 0;
+    long int s2 = 0;
     int count1 = 0; //счетчик количества мини-порций Маши
     int count2 = 0; //счетчик количества мини-порций Пети
 
@@ -80,7 +80,7 @@ int main () {
         }
     }
 
-    int result;
+    long int result;
 
     if (s1 <= s2){
         result = s2 - s1;
